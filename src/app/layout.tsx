@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Vanilla CSS Dark Mode Converter",
   description: "Add your vanilla css and convert it to dark css",
   openGraph: {
-    images: "/og",
+    images: "/api/og",
   },
 };
 
