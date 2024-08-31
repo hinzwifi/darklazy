@@ -25,6 +25,7 @@
 // export default PhotoSphereViewer;
 import { useEffect } from "react";
 import View360, { EquirectProjection } from "@egjs/view360";
+import { ControlBar } from "@egjs/view360";
 
 const View360Viewer = () => {
   useEffect(() => {
@@ -38,6 +39,14 @@ const View360Viewer = () => {
           video: false, // Set to true if you're displaying a video
         }),
       });
+      viewer.addPlugins(
+        new ControlBar({
+          gyroButton: {
+            position: ControlBar.POSITION.TOP_RIGHT,
+            order: 0,
+          },
+        })
+      );
 
       return () => {
         // Clean up the viewer on component unmount
