@@ -1,8 +1,8 @@
-import PhotoSphereViewer from "@/components/360Viewer";
+import View360Viewer from "@/components/360Viewer";
 import React from "react";
 
 function page() {
-  return <PhotoSphereViewer />;
+  return <View360Viewer />;
 }
 
 export default page;
